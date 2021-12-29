@@ -71,20 +71,20 @@ Promise.all(promises).then(() => {
             'content': i.content
         }
     });
-    // axios.post(apiPath, ipfsArrayToUpload,
-    //     {
-    //         headers: {
-    //             "X-API-KEY": apiKey,
-    //             "Content-Type": "application/json",
-    //             "accept": "application/json",
-    //         }
-    //     }
-    // ).then(res => {
-    //     console.log('bulk upload response', res.data);
+    axios.post(apiPath, ipfsArrayToUpload,
+        {
+            headers: {
+                "X-API-KEY": apiKey,
+                "Content-Type": "application/json",
+                "accept": "application/json",
+            }
+        }
+    ).then(res => {
+        console.log('bulk upload response', res.data);
 
-    //     const path = saveBulkUploadRes(res.data);
-    //     console.log('bulk upload result saved at path: ', path);
-    // }).catch(err => {
-    //     console.error(err);
-    // });
+        const path = saveBulkUploadRes(res.data);
+        console.log('bulk upload result saved at path: ', path);
+    }).catch(err => {
+        console.error(err);
+    });
 });

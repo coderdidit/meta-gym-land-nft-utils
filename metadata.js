@@ -82,22 +82,22 @@ assert(JSON.stringify(ipfsArray[0]) == JSON.stringify({
 }));
 
 
-// axios.post(apiPath, ipfsArray,
-//     {
-//         headers: {
-//             "X-API-KEY": apiKey,
-//             "Content-Type": "application/json",
-//             "accept": "application/json",
-//         }
-//     }
-// ).then(res => {
-//     console.log('bulk upload response', res.data);
+axios.post(apiPath, ipfsArray,
+    {
+        headers: {
+            "X-API-KEY": apiKey,
+            "Content-Type": "application/json",
+            "accept": "application/json",
+        }
+    }
+).then(res => {
+    console.log('bulk upload response', res.data);
 
-//     const path = saveBulkUploadRes(res.data);
-//     console.log('bulk upload result saved at path: ', path);
-// }).catch(err => {
-//     console.error(err);
-// });
+    const path = saveBulkUploadRes(res.data);
+    console.log('bulk upload result saved at path: ', path);
+}).catch(err => {
+    console.error(err);
+});
 
 const saveBulkUploadRes = (bulkUploadRes) => {
     const d = new Date();
