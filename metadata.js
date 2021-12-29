@@ -7,7 +7,7 @@ const apiKey = process.env.MORALIS_API_KEY;
 const ipfsArray = [];
 const imgCount = 4;
 
-const hash = ""
+const hash = "123"
 
 for (let i = 1; i < imgCount; i++) {
     const paddedHex = ("000000000000000000000000000000000000000000000000000000000000000") + i.toString();
@@ -29,30 +29,22 @@ console.log('ipfsArray', ipfsArray.length);
 console.log('---------------------------');
 
 assert(ipfsArray.length === 3);
-const outPathForTest = ipfsArray.map(i => {
-    return {
-        "path": i.path,
-        "content_non_empty": i.content != "",
-        "idx": i.idx
-    }
-}).sort((a, b) => a.idx - b.idx);
 
-console.log("outPathForTest", outPathForTest);
-assert(outPathForTest.filter(i => i.content_non_empty).length == outPathForTest.length);
-assert(JSON.stringify(outPathForTest.map(i => i.path)) == JSON.stringify([
+console.log("ipfsArray", ipfsArray);
+
+assert(JSON.stringify(ipfsArray.map(i => i.path)) == JSON.stringify([
     'metadata/0000000000000000000000000000000000000000000000000000000000000001.json',
     'metadata/0000000000000000000000000000000000000000000000000000000000000002.json',
     'metadata/0000000000000000000000000000000000000000000000000000000000000003.json',
 ]));
+console.log('compare outPathForTest[0] to expected', ipfsArray[0]);
+assert(JSON.stringify(ipfsArray[0]) == JSON.stringify({
+    path: 'metadata/0000000000000000000000000000000000000000000000000000000000000001.json',
+    content: { image: `ipfs://${hash}/images/1.png`, name: '', description: '' }
+}));
 
-const ipfsArrayToUpload = ipfsArray.map(i => {
-    return {
-        'path': i.path,
-        'content': i.content
-    }
-});
 
-// axios.post(apiPath, ipfsArrayToUpload,
+// axios.post(apiPath, ipfsArray,
 //     {
 //         headers: {
 //             "X-API-KEY": apiKey,
