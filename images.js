@@ -67,7 +67,7 @@ Promise.all(promises).then(() => {
     // axios.post(apiPath, ipfsArray,
     //     {
     //         headers: {
-    //             "X-API-KEY": "",
+    //             "X-API-KEY": apiKey,
     //             "Content-Type": "application/json",
     //             "accept": "application/json",
     //         }
