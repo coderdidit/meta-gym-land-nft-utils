@@ -36,6 +36,7 @@ console.log('---------------------------');
 Promise.all(promises).then(() => {
     console.log('ipfsArray', ipfsArray.length);
     console.log('---------------------------');
+    assert(ipfsArray.length === 3);
 
     // axios.post(apiPath, ipfsArray,
     //     {
