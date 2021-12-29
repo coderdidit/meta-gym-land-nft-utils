@@ -5,16 +5,19 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
 
 contract NFTContract is ERC1155, Ownable {
-    uint256 public constant ARTWORK = 0;
-    uint256 public constant PHOTO = 1;
+    uint256 public constant ERACH = 0;
+    uint256 public constant ORLAI = 1;
+    uint256 public constant ODIALT = 2;
     address marketplaceAddress;
 
     constructor(address _marketplaceAddress)
         ERC1155("https://inzloc1b6zrv.usemoralis.com/{id}.json")
     {
         marketplaceAddress = _marketplaceAddress;
-        _mint(msg.sender, ARTWORK, 1, "");
-        _mint(msg.sender, PHOTO, 2, "");
+        // autmoatically mint tokens to the sender
+        _mint(msg.sender, ERACH, 10, "");
+        _mint(msg.sender, ORLAI, 10, "");
+        _mint(msg.sender, ODIALT, 10, "");
     }
 
     function mint(
