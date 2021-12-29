@@ -56,15 +56,22 @@ Promise.all(promises).then(() => {
         }
     }).sort((a, b) => a.idx - b.idx);
 
-    console.log("outPathForTest", outPathForTest)
-    assert(outPathForTest === [
-        { path: 'images/1.png', content_non_empty: true, idx: 1 },
-        { path: 'images/2.png', content_non_empty: true, idx: 2 },
-        { path: 'images/3.png', content_non_empty: true, idx: 3 },
-        { path: 'cover.gif', content_non_empty: true, idx: 4 }
-    ]);
+    console.log("outPathForTest", outPathForTest);
+    assert(outPathForTest.filter(i => i.content_non_empty).length == outPathForTest.length);
+    assert(JSON.stringify(outPathForTest.map(i => i.path)) == JSON.stringify([
+        'images/1.png',
+        'images/2.png',
+        'images/3.png',
+        'cover.gif'
+    ]));
 
-    // axios.post(apiPath, ipfsArray,
+    const ipfsArrayToUpload = ipfsArray.map(i => {
+        return {
+            'path': i.path,
+            'content': i.content
+        }
+    });
+    // axios.post(apiPath, ipfsArrayToUpload,
     //     {
     //         headers: {
     //             "X-API-KEY": apiKey,
