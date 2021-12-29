@@ -9,6 +9,21 @@ const imgCount = 4;
 
 const hash = "123"
 
+const metadataMapping = new Map([
+    [1, {
+        name: "",
+        description: ""
+    }],
+    [2, {
+        name: "",
+        description: ""
+    }],
+    [3, {
+        name: "",
+        description: ""
+    }]
+]);
+
 for (let i = 1; i < imgCount; i++) {
     const paddedHex = ("000000000000000000000000000000000000000000000000000000000000000") + i.toString();
     const outPath = `metadata/${paddedHex}.json`;
@@ -16,8 +31,7 @@ for (let i = 1; i < imgCount; i++) {
         path: outPath,
         content: {
             image: `ipfs://${hash}/images/${i}.png`,
-            name: "",
-            description: ""
+            ...metadataMapping.get(i)
         }
     })
 }
