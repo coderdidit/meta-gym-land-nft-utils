@@ -34,6 +34,16 @@ console.log('apiKey', apiKey);
 console.log('apiPath', apiPath);
 console.log('---------------------------');
 
+const saveBulkUploadRes = (bulkUploadRes) => {
+    const d = new Date();
+    const fName = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDay()}-${d.getTime()}.json`;
+    const outPath = `${__dirname}/bulk_uploads/${fName}`;
+    fs.writeFileSync(
+        outPath, JSON.stringify(bulkUploadRes)
+    );
+    return outPath;
+}
+
 Promise.all(promises).then(() => {
     console.log('ipfsArray', ipfsArray.length);
     console.log('---------------------------');
@@ -64,14 +74,10 @@ Promise.all(promises).then(() => {
     //     }
     // ).then(res => {
     //     console.log('bulk upload response', res.data);
+
+    //     const path = saveBulkUploadRes(res.data);
+    //     console.log('bulk upload result saved at path: ', path);
     // }).catch(err => {
     //     console.error(err);
-    // })
-    const d = new Date();
-    const bulkUploadRes = { "test": "test" };
-    const fName = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDay()}-${d.getTime()}.json`;
-    const outPath = `${__dirname}/bulk_uploads/${fName}`;
-    fs.writeFileSync(
-        outPath, JSON.stringify(bulkUploadRes)
-    )
+    // });
 });
