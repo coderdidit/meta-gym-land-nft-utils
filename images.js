@@ -18,6 +18,7 @@ for (let i = 1; i < imgCount; i++) {
             (err, data) => {
                 if (err) rejects();
                 ipfsArray.push({
+                    idx: i,
                     path: outPath,
                     content: data.toString("base64")
                 })
@@ -36,7 +37,22 @@ console.log('---------------------------');
 Promise.all(promises).then(() => {
     console.log('ipfsArray', ipfsArray.length);
     console.log('---------------------------');
-    assert(ipfsArray.length === 3);
+    assert(ipfsArray.length === 4);
+    const outPathForTest = ipfsArray.map(i => {
+        return {
+            "path": i.path,
+            "content_non_empty": i.content != "",
+            "idx": i.idx
+        }
+    }).sort((a, b) => a.idx - b.idx);
+
+    console.log("outPathForTest", outPathForTest)
+    assert(outPathForTest === [
+        { path: 'images/1.png', content_non_empty: true, idx: 1 },
+        { path: 'images/2.png', content_non_empty: true, idx: 2 },
+        { path: 'images/3.png', content_non_empty: true, idx: 3 },
+        { path: 'cover.gif', content_non_empty: true, idx: 4 }
+    ]);
 
     // axios.post(apiPath, ipfsArray,
     //     {
@@ -52,8 +68,8 @@ Promise.all(promises).then(() => {
     //     console.error(err);
     // })
     const d = new Date();
-    const bulkUploadRes = {"test":"test"};
-    const fName = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDay()}-${d.getTime()}.json`;
+    const bulkUploadRes = { "test": "test" };
+    const fName = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDay()}-${d.getTime()}.json`;
     const outPath = `${__dirname}/bulk_uploads/${fName}`;
     fs.writeFileSync(
         outPath, JSON.stringify(bulkUploadRes)
