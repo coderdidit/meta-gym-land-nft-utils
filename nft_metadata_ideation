@@ -1,18 +1,17 @@
 nft metadata
 
+image
 name
 description
-image
-collection
-collectionImage
-spritePng
-spriteJson
-
+cover_image
+collection_cover_image
+spritesheet_image
+spritesheet_json
 
 or
 
-spriteAtlas: {
-    png:
+sprite_atlas: {
+    image:
     json:
 }
 
