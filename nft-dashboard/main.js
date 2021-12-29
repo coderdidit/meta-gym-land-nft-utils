@@ -4,7 +4,7 @@ const appId = "gsWQjK3OLHfDLpPuiyVJb6g9TW9rYbhF41oyDXi8";
 Moralis.start({ serverUrl, appId });
 
 const chain = "rinkeby"
-const ERC1155_CONTRACT = "0x1904b52B2768E4DD72bf300202B4194E05dd0AFa"
+const ERC1155_CONTRACT = "0x7650D3448F8044d8732528148c2A2d6B1D17BA88"
 
 const fechMetadtata = async (nfts) => {
     promises = []

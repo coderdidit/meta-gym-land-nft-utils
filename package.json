@@ -1,0 +1,23 @@
+{
+  "name": "meta-gym-land-nft-minter",
+  "version": "1.0.0",
+  "description": "### contracts deployed to rinkeby testnet",
+  "main": "images.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderdidit/meta-gym-land-nft-minter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderdidit/meta-gym-land-nft-minter/issues"
+  },
+  "homepage": "https://github.com/coderdidit/meta-gym-land-nft-minter#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "fs": "^0.0.1-security"
+  }
+}

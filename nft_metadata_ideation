@@ -1,0 +1,20 @@
+nft metadata
+
+name
+description
+image
+collection
+collectionImage
+spritePng
+spriteJson
+
+
+or
+
+spriteAtlas: {
+    png:
+    json:
+}
+
+attributes
+
