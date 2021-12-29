@@ -7,24 +7,24 @@ const apiKey = process.env.MORALIS_API_KEY;
 const ipfsArray = [];
 const imgCount = 4;
 
-const hash = "123"
+const hash = "QmTTcKZDte4PCwMvvJ2vP2C2L92gs8rJYaQjcy5PVf6ud1"
 
 const metadataMapping = new Map([
     [1, { // blue
         name: "Erach Salte",
-        description: "Want's to go to the gym to boost energy and stay healthy",
+        description: "Go to the gym to boost energy and stay healthy",
         background_color: "5E75C6",
         attributes: {},
     }],
     [2, { // girl
         name: "Orlai Grande",
-        description: "Want's to go to the gym to boost energy and look beautiful",
+        description: "Go to the gym to boost energy and look beautiful",
         background_color: "F2D8D6",
         attributes: {},
     }],
     [3, { // red
         name: "Odialt Drutum",
-        description: "Want's to go to the gym to improve his muscles and look good",
+        description: "Go to the gym to improve his muscles and look good",
         background_color: "F2EBD1",
         attributes: {},
     }]
@@ -36,12 +36,12 @@ for (let i = 1; i < imgCount; i++) {
     ipfsArray.push({
         path: outPath,
         content: {
-            image: `ipfs://${hash}/images/${i}.png`,
-            cover_image: `ipfs://${hash}/images/${i}.png`,
-            collection_name: "",
-            collection_cover_image: `ipfs://${hash}/images/cover.gif`,
+            image: `https://ipfs.moralis.io:2053/ipfs/${hash}/images/${i}.png`,
+            cover_image: `https://ipfs.moralis.io:2053/ipfs/${hash}/images/${i}.png`,
+            collection_name: "Moralis Avalanche Hackaton 2021 Test Drop",
+            collection_cover_image: `https://ipfs.moralis.io:2053/ipfs/${hash}/cover.gif`,
             sprite: {
-                image: `ipfs://${hash}/images/${i}.png`,
+                image: `https://ipfs.moralis.io:2053/ipfs/${hash}/images/${i}.png`,
                 json: {}
             },
             category: "avatars",
@@ -69,19 +69,23 @@ console.log('compare outPathForTest[0] to expected', ipfsArray[0]);
 assert(JSON.stringify(ipfsArray[0]) == JSON.stringify({
     path: 'metadata/0000000000000000000000000000000000000000000000000000000000000001.json',
     content: {
-        image: 'ipfs://123/images/1.png',
-        cover_image: 'ipfs://123/images/1.png',
-        collection_cover_image: 'ipfs://123/images/cover.gif',
-        sprite: { image: 'ipfs://123/images/1.png', json: {} },
+        image: 'https://ipfs.moralis.io:2053/ipfs/QmTTcKZDte4PCwMvvJ2vP2C2L92gs8rJYaQjcy5PVf6ud1/images/1.png',
+        cover_image: 'https://ipfs.moralis.io:2053/ipfs/QmTTcKZDte4PCwMvvJ2vP2C2L92gs8rJYaQjcy5PVf6ud1/images/1.png',
+        collection_name: "Moralis Avalanche Hackaton 2021 Test Drop",
+        collection_cover_image: 'https://ipfs.moralis.io:2053/ipfs/QmTTcKZDte4PCwMvvJ2vP2C2L92gs8rJYaQjcy5PVf6ud1/cover.gif',
+        sprite: {
+            image: 'https://ipfs.moralis.io:2053/ipfs/QmTTcKZDte4PCwMvvJ2vP2C2L92gs8rJYaQjcy5PVf6ud1/images/1.png',
+            json: {}
+        },
         category: 'avatars',
-        name: '',
-        description: '',
+        name: 'Erach Salte',
+        description: "Go to the gym to boost energy and stay healthy",
         background_color: '5E75C6',
         attributes: {}
     }
 }));
 
-
+const apiPath = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder";
 axios.post(apiPath, ipfsArray,
     {
         headers: {
@@ -101,7 +105,7 @@ axios.post(apiPath, ipfsArray,
 
 const saveBulkUploadRes = (bulkUploadRes) => {
     const d = new Date();
-    const fName = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDay()}-${d.getTime()}.json`;
+    const fName = `metadata-${d.getFullYear()}-${d.getMonth() + 1}-${d.getDay()}-${d.getTime()}.json`;
     const outPath = `${__dirname}/bulk_uploads/${fName}`;
     fs.writeFileSync(
         outPath, JSON.stringify(bulkUploadRes)
