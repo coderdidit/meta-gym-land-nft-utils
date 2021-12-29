@@ -39,3 +39,6 @@ contract NFTContract is ERC1155, Ownable {
         _burn(account, id, amount);
     }
 }
+
+// latest contract deployment on rinkeby 0x7ae9f5b997dacd922e2da3fd79207d01ee6f5300
+
