@@ -11,7 +11,7 @@ contract NFTContract is ERC1155, Ownable {
     address marketplaceAddress;
 
     constructor(address _marketplaceAddress)
-        ERC1155("https://inzloc1b6zrv.usemoralis.com/{id}.json")
+        ERC1155("https://ipfs.moralis.io:2053/ipfs/QmYUsDTWGCZzfJRosYgLcA5DdiiJpnu4WquWZVZNki25PZ/metadata/{id}.json")
     {
         marketplaceAddress = _marketplaceAddress;
         // autmoatically mint tokens to the sender
