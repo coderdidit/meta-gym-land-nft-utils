@@ -1,5 +1,8 @@
-let fs = require("fs");
-let axios = require("axios");
+require('dotenv').config();
+const fs = require("fs");
+const axios = require("axios");
+const assert = require('assert');
+const apiKey = process.env.MORALIS_API_KEY;
 
 let ipfsArray = [];
 const promises = [];
@@ -24,26 +27,34 @@ for (let i = 1; i < imgCount; i++) {
     }));
 }
 
+const apiPath = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder";
+console.log('--------GENERATE NFT IMAGES-------------------');
+console.log('apiKey', apiKey);
+console.log('apiPath', apiPath);
+console.log('---------------------------');
+
 Promise.all(promises).then(() => {
     console.log('ipfsArray', ipfsArray.length);
     console.log('---------------------------');
-    // for (const f of ipfsArray) {
-    //     console.log(f);
-    // }
-    // upload to ipfs with moralis
-    const apiPath = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder"
-    axios.post(apiPath, ipfsArray,
-        {
-            headers: {
-                "X-API-KEY": "",
-                "Content-Type": "application/json",
-                "accept": "application/json",
-            }
-        }
-    ).then(res => {
-        console.log('bulk upload response', res.data);
-    }).catch(err => {
-        console.error(err);
-    })
 
+    // axios.post(apiPath, ipfsArray,
+    //     {
+    //         headers: {
+    //             "X-API-KEY": "",
+    //             "Content-Type": "application/json",
+    //             "accept": "application/json",
+    //         }
+    //     }
+    // ).then(res => {
+    //     console.log('bulk upload response', res.data);
+    // }).catch(err => {
+    //     console.error(err);
+    // })
+    const d = new Date();
+    const bulkUploadRes = {"test":"test"};
+    const fName = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDay()}-${d.getTime()}.json`;
+    const outPath = `${__dirname}/bulk_uploads/${fName}`;
+    fs.writeFileSync(
+        outPath, JSON.stringify(bulkUploadRes)
+    )
 });
