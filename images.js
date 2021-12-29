@@ -6,14 +6,14 @@ const apiKey = process.env.MORALIS_API_KEY;
 
 let ipfsArray = [];
 const promises = [];
-const imgCount = 5;
+const imgCount = 3;
 
-for (let i = 1; i < imgCount; i++) {
+for (let i = 0; i < imgCount; i++) {
     promises.push(new Promise((resolve, rejects) => {
-        const fileName = i <= 3 ? `avtr_${i}.png` : `mgl_cover.gif`;
+        const fileName = `avtr_${i}.png`;
         const inPath = `${__dirname}/METADATA-STATIC-APP/graphics/${fileName}`
         console.log('reading file', inPath);
-        const outPath = i <= 3 ? `images/${i}.png` : `cover.gif`;
+        const outPath = `images/${i}.png`;
         fs.readFile(inPath,
             (err, data) => {
                 if (err) rejects();
@@ -27,6 +27,25 @@ for (let i = 1; i < imgCount; i++) {
         )
     }));
 }
+
+// cover
+promises.push(new Promise((resolve, rejects) => {
+    const fileName = `mgl_cover.gif`;
+    const inPath = `${__dirname}/METADATA-STATIC-APP/graphics/${fileName}`
+    console.log('reading file', inPath);
+    const outPath = `cover.gif`;
+    fs.readFile(inPath,
+        (err, data) => {
+            if (err) rejects();
+            ipfsArray.push({
+                idx: 3,
+                path: outPath,
+                content: data.toString("base64")
+            })
+            resolve();
+        }
+    )
+}));
 
 const apiPath = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder";
 console.log('--------GENERATE NFT IMAGES-------------------');
@@ -59,9 +78,9 @@ Promise.all(promises).then(() => {
     console.log("outPathForTest", outPathForTest);
     assert(outPathForTest.filter(i => i.content_non_empty).length == outPathForTest.length);
     assert(JSON.stringify(outPathForTest.map(i => i.path)) == JSON.stringify([
+        'images/0.png',
         'images/1.png',
         'images/2.png',
-        'images/3.png',
         'cover.gif'
     ]));
 

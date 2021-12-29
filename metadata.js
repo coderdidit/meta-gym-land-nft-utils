@@ -5,24 +5,24 @@ const axios = require("axios");
 
 const apiKey = process.env.MORALIS_API_KEY;
 const ipfsArray = [];
-const imgCount = 4;
+const imgCount = 3;
 
-const hash = "QmTTcKZDte4PCwMvvJ2vP2C2L92gs8rJYaQjcy5PVf6ud1"
+const hash = "QmVF53rCjFiFSXyJd64NgeGioQG93gegdsymyMWtJLG9Ev"
 
 const metadataMapping = new Map([
-    [1, { // blue
+    [0, { // blue
         name: "Erach Salte",
         description: "Go to the gym to boost energy and stay healthy",
         background_color: "5E75C6",
         attributes: {},
     }],
-    [2, { // girl
+    [1, { // girl
         name: "Orlai Grande",
         description: "Go to the gym to boost energy and look beautiful",
         background_color: "F2D8D6",
         attributes: {},
     }],
-    [3, { // red
+    [2, { // red
         name: "Odialt Drutum",
         description: "Go to the gym to improve his muscles and look good",
         background_color: "F2EBD1",
@@ -30,7 +30,7 @@ const metadataMapping = new Map([
     }]
 ]);
 
-for (let i = 1; i < imgCount; i++) {
+for (let i = 0; i < imgCount; i++) {
     const paddedHex = ("000000000000000000000000000000000000000000000000000000000000000") + i.toString();
     const outPath = `metadata/${paddedHex}.json`;
     ipfsArray.push({
@@ -61,23 +61,24 @@ assert(ipfsArray.length === 3);
 console.log("ipfsArray", ipfsArray);
 
 assert(JSON.stringify(ipfsArray.map(i => i.path)) == JSON.stringify([
+    'metadata/0000000000000000000000000000000000000000000000000000000000000000.json',
     'metadata/0000000000000000000000000000000000000000000000000000000000000001.json',
     'metadata/0000000000000000000000000000000000000000000000000000000000000002.json',
-    'metadata/0000000000000000000000000000000000000000000000000000000000000003.json',
 ]));
 console.log('compare outPathForTest[0] to expected', ipfsArray[0]);
 assert(JSON.stringify(ipfsArray[0]) == JSON.stringify({
-    path: 'metadata/0000000000000000000000000000000000000000000000000000000000000001.json',
+    path: 'metadata/0000000000000000000000000000000000000000000000000000000000000000.json',
     content: {
-        image: 'https://ipfs.moralis.io:2053/ipfs/QmTTcKZDte4PCwMvvJ2vP2C2L92gs8rJYaQjcy5PVf6ud1/images/1.png',
-        cover_image: 'https://ipfs.moralis.io:2053/ipfs/QmTTcKZDte4PCwMvvJ2vP2C2L92gs8rJYaQjcy5PVf6ud1/images/1.png',
+        image: `https://ipfs.moralis.io:2053/ipfs/${hash}/images/0.png`,
+        cover_image: `https://ipfs.moralis.io:2053/ipfs/${hash}/images/0.png`,
         collection_name: "Moralis Avalanche Hackaton 2021 Test Drop",
-        collection_cover_image: 'https://ipfs.moralis.io:2053/ipfs/QmTTcKZDte4PCwMvvJ2vP2C2L92gs8rJYaQjcy5PVf6ud1/cover.gif',
+        collection_cover_image: `https://ipfs.moralis.io:2053/ipfs/${hash}/cover.gif`,
         sprite: {
-            image: 'https://ipfs.moralis.io:2053/ipfs/QmTTcKZDte4PCwMvvJ2vP2C2L92gs8rJYaQjcy5PVf6ud1/images/1.png',
+            image: `https://ipfs.moralis.io:2053/ipfs/${hash}/images/0.png`,
             json: {}
         },
         category: 'avatars',
+
         name: 'Erach Salte',
         description: "Go to the gym to boost energy and stay healthy",
         background_color: '5E75C6',
