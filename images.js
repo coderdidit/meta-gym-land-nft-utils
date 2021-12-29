@@ -28,7 +28,23 @@ for (let i = 1; i < imgCount; i++) {
 Promise.all(promises).then(() => {
     console.log('ipfsArray', ipfsArray.length);
     console.log('---------------------------');
-    for (const f of ipfsArray) {
-        console.log(f);
-    }
+    // for (const f of ipfsArray) {
+    //     console.log(f);
+    // }
+    // upload to ipfs with moralis
+    const apiPath = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder"
+    axios.post(apiPath, ipfsArray,
+        {
+            headers: {
+                "X-API-KEY": "",
+                "Content-Type": "application/json",
+                "accept": "application/json",
+            }
+        }
+    ).then(res => {
+        console.log('bulk upload response', res.data);
+    }).catch(err => {
+        console.error(err);
+    })
+
 });
