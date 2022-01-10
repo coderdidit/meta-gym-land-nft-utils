@@ -47,6 +47,25 @@ promises.push(new Promise((resolve, rejects) => {
     )
 }));
 
+// demo avatar
+promises.push(new Promise((resolve, rejects) => {
+    const fileName = `test_avtr.png`;
+    const inPath = `${__dirname}/METADATA-STATIC-APP/graphics/${fileName}`
+    console.log('reading file', inPath);
+    const outPath = `images/3.png`;
+    fs.readFile(inPath,
+        (err, data) => {
+            if (err) rejects();
+            ipfsArray.push({
+                idx: 4,
+                path: outPath,
+                content: data.toString("base64")
+            })
+            resolve();
+        }
+    )
+}));
+
 const apiPath = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder";
 console.log('--------GENERATE NFT IMAGES-------------------');
 console.log('apiKey', apiKey);
@@ -66,7 +85,7 @@ const saveBulkUploadRes = (bulkUploadRes) => {
 Promise.all(promises).then(() => {
     console.log('ipfsArray', ipfsArray.length);
     console.log('---------------------------');
-    assert(ipfsArray.length === 4);
+    assert(ipfsArray.length === 5);
     const outPathForTest = ipfsArray.map(i => {
         return {
             "path": i.path,
@@ -81,7 +100,8 @@ Promise.all(promises).then(() => {
         'images/0.png',
         'images/1.png',
         'images/2.png',
-        'cover.gif'
+        'cover.gif',
+        'images/3.png',
     ]));
 
     const ipfsArrayToUpload = ipfsArray.map(i => {
@@ -90,20 +110,22 @@ Promise.all(promises).then(() => {
             'content': i.content
         }
     });
-    axios.post(apiPath, ipfsArrayToUpload,
-        {
-            headers: {
-                "X-API-KEY": apiKey,
-                "Content-Type": "application/json",
-                "accept": "application/json",
-            }
-        }
-    ).then(res => {
-        console.log('bulk upload response', res.data);
+    const onlyDemoAvtr = [ipfsArrayToUpload[ipfsArrayToUpload.length-1]]
+    console.log('onlyDemoAvtr', onlyDemoAvtr);
+    // axios.post(apiPath, ipfsArrayToUpload,
+    //     {
+    //         headers: {
+    //             "X-API-KEY": apiKey,
+    //             "Content-Type": "application/json",
+    //             "accept": "application/json",
+    //         }
+    //     }
+    // ).then(res => {
+    //     console.log('bulk upload response', res.data);
 
-        const path = saveBulkUploadRes(res.data);
-        console.log('bulk upload result saved at path: ', path);
-    }).catch(err => {
-        console.error(err);
-    });
+    //     const path = saveBulkUploadRes(res.data);
+    //     console.log('bulk upload result saved at path: ', path);
+    // }).catch(err => {
+    //     console.error(err);
+    // });
 });

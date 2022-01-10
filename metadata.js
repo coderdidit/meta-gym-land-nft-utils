@@ -27,6 +27,12 @@ const metadataMapping = new Map([
         description: "Go to the gym to improve his muscles and look good",
         background_color: "F2EBD1",
         attributes: {},
+    }],
+    [4, { // demo avatar
+        name: "Demo Testus",
+        description: "Go to the gym to demonstrate",
+        background_color: "FFFFFF",
+        attributes: {},
     }]
 ]);
 
@@ -56,7 +62,7 @@ console.log('---------------------------');
 console.log('ipfsArray', ipfsArray.length);
 console.log('---------------------------');
 
-assert(ipfsArray.length === 3);
+assert(ipfsArray.length === 4);
 
 console.log("ipfsArray", ipfsArray);
 
