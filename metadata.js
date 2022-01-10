@@ -5,7 +5,7 @@ const axios = require("axios");
 
 const apiKey = process.env.MORALIS_API_KEY;
 const ipfsArray = [];
-const imgCount = 3;
+const imgCount = 4;
 
 const hash = "QmVF53rCjFiFSXyJd64NgeGioQG93gegdsymyMWtJLG9Ev"
 
@@ -64,14 +64,15 @@ console.log('---------------------------');
 
 assert(ipfsArray.length === 4);
 
-console.log("ipfsArray", ipfsArray);
+// console.log("ipfsArray", ipfsArray);
 
 assert(JSON.stringify(ipfsArray.map(i => i.path)) == JSON.stringify([
     'metadata/0000000000000000000000000000000000000000000000000000000000000000.json',
     'metadata/0000000000000000000000000000000000000000000000000000000000000001.json',
     'metadata/0000000000000000000000000000000000000000000000000000000000000002.json',
+    'metadata/0000000000000000000000000000000000000000000000000000000000000003.json',
 ]));
-console.log('compare outPathForTest[0] to expected', ipfsArray[0]);
+// console.log('compare outPathForTest[0] to expected', ipfsArray[0]);
 assert(JSON.stringify(ipfsArray[0]) == JSON.stringify({
     path: 'metadata/0000000000000000000000000000000000000000000000000000000000000000.json',
     content: {
@@ -92,23 +93,26 @@ assert(JSON.stringify(ipfsArray[0]) == JSON.stringify({
     }
 }));
 
-const apiPath = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder";
-axios.post(apiPath, ipfsArray,
-    {
-        headers: {
-            "X-API-KEY": apiKey,
-            "Content-Type": "application/json",
-            "accept": "application/json",
-        }
-    }
-).then(res => {
-    console.log('bulk upload response', res.data);
+const onlyDemoAvtr = [ipfsArray[ipfsArray.length - 1]]
+console.log('onlyDemoAvtr', onlyDemoAvtr);
 
-    const path = saveBulkUploadRes(res.data);
-    console.log('bulk upload result saved at path: ', path);
-}).catch(err => {
-    console.error(err);
-});
+// const apiPath = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder";
+// axios.post(apiPath, ipfsArray,
+//     {
+//         headers: {
+//             "X-API-KEY": apiKey,
+//             "Content-Type": "application/json",
+//             "accept": "application/json",
+//         }
+//     }
+// ).then(res => {
+//     console.log('bulk upload response', res.data);
+
+//     const path = saveBulkUploadRes(res.data);
+//     console.log('bulk upload result saved at path: ', path);
+// }).catch(err => {
+//     console.error(err);
+// });
 
 const saveBulkUploadRes = (bulkUploadRes) => {
     const d = new Date();
