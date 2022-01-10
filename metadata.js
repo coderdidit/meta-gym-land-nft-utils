@@ -7,7 +7,8 @@ const apiKey = process.env.MORALIS_API_KEY;
 const ipfsArray = [];
 const imgCount = 4;
 
-const hash = "QmVF53rCjFiFSXyJd64NgeGioQG93gegdsymyMWtJLG9Ev"
+// const hash = "QmVF53rCjFiFSXyJd64NgeGioQG93gegdsymyMWtJLG9Ev"
+const hash = "QmeqXw9WpfLSwKZbLN5HB1xx41oERtf7fiyMs2Esue1fRt"
 
 const metadataMapping = new Map([
     [0, { // blue
@@ -96,23 +97,24 @@ assert(JSON.stringify(ipfsArray[0]) == JSON.stringify({
 const onlyDemoAvtr = [ipfsArray[ipfsArray.length - 1]]
 console.log('onlyDemoAvtr', onlyDemoAvtr);
 
-// const apiPath = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder";
-// axios.post(apiPath, ipfsArray,
-//     {
-//         headers: {
-//             "X-API-KEY": apiKey,
-//             "Content-Type": "application/json",
-//             "accept": "application/json",
-//         }
-//     }
-// ).then(res => {
-//     console.log('bulk upload response', res.data);
+// TODO i think  each itome should be strigified
+const apiPath = "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder";
+axios.post(apiPath, onlyDemoAvtr,
+    {
+        headers: {
+            "X-API-KEY": apiKey,
+            "Content-Type": "application/json",
+            "accept": "application/json",
+        }
+    }
+).then(res => {
+    console.log('bulk upload response', res.data);
 
-//     const path = saveBulkUploadRes(res.data);
-//     console.log('bulk upload result saved at path: ', path);
-// }).catch(err => {
-//     console.error(err);
-// });
+    const path = saveBulkUploadRes(res.data);
+    console.log('bulk upload result saved at path: ', path);
+}).catch(err => {
+    console.error(err);
+});
 
 const saveBulkUploadRes = (bulkUploadRes) => {
     const d = new Date();

@@ -104,28 +104,30 @@ Promise.all(promises).then(() => {
         'images/3.png',
     ]));
 
-    const ipfsArrayToUpload = ipfsArray.map(i => {
-        return {
-            'path': i.path,
-            'content': i.content
-        }
-    });
-    const onlyDemoAvtr = [ipfsArrayToUpload[ipfsArrayToUpload.length-1]]
+    const ipfsArrayToUpload = ipfsArray
+        .sort((a, b) => a.idx - b.idx)
+        .map(i => {
+            return {
+                'path': i.path,
+                'content': i.content
+            }
+        });
+    const onlyDemoAvtr = [ipfsArrayToUpload[ipfsArrayToUpload.length - 1]]
     console.log('onlyDemoAvtr', onlyDemoAvtr);
-    // axios.post(apiPath, ipfsArrayToUpload,
-    //     {
-    //         headers: {
-    //             "X-API-KEY": apiKey,
-    //             "Content-Type": "application/json",
-    //             "accept": "application/json",
-    //         }
-    //     }
-    // ).then(res => {
-    //     console.log('bulk upload response', res.data);
+    axios.post(apiPath, onlyDemoAvtr,
+        {
+            headers: {
+                "X-API-KEY": apiKey,
+                "Content-Type": "application/json",
+                "accept": "application/json",
+            }
+        }
+    ).then(res => {
+        console.log('bulk upload response', res.data);
 
-    //     const path = saveBulkUploadRes(res.data);
-    //     console.log('bulk upload result saved at path: ', path);
-    // }).catch(err => {
-    //     console.error(err);
-    // });
+        const path = saveBulkUploadRes(res.data);
+        console.log('bulk upload result saved at path: ', path);
+    }).catch(err => {
+        console.error(err);
+    });
 });
