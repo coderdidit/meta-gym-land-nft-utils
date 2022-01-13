@@ -8,7 +8,8 @@ const ipfsArray = [];
 const imgCount = 4;
 
 // const hash = "QmVF53rCjFiFSXyJd64NgeGioQG93gegdsymyMWtJLG9Ev"
-const hash = "QmeqXw9WpfLSwKZbLN5HB1xx41oERtf7fiyMs2Esue1fRt"
+// const hash = "QmeqXw9WpfLSwKZbLN5HB1xx41oERtf7fiyMs2Esue1fRt"
+const hash = "QmWRFZXmtqzcQQ2UT4YA5B3tF1jeA6QmmE6P7jH7yahPT9"
 
 const metadataMapping = new Map([
     [0, { // blue
