@@ -49,7 +49,7 @@ promises.push(new Promise((resolve, rejects) => {
 
 // demo avatar
 promises.push(new Promise((resolve, rejects) => {
-    const fileName = `test_avtr.png`;
+    const fileName = `avatar64x64.png`;
     const inPath = `${__dirname}/METADATA-STATIC-APP/graphics/${fileName}`
     console.log('reading file', inPath);
     const outPath = `images/3.png`;
