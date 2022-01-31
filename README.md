@@ -1,4 +1,4 @@
-# MetaGymLand NFT graphics and metadata
+# MetaGymLand NFT graphics and metadata scripts
 
 MetaGymLand Wellness Metaverse Powered with AI and NFTs
 
