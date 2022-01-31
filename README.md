@@ -2,7 +2,7 @@
 
 MetaGymLand Wellness Metaverse Powered with AI and NFTs
 
-https://metagymland.com landing page
+https://metagymland.com
 
 ### NFT graphics and metadata scripts
 
