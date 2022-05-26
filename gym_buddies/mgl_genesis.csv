@@ -1,101 +1,101 @@
-number,name,background,hat,hair,eyebrow,eyes,glasses,lips,skin,shirt,shorts,shoes,accesories,
-1,GB1,purple,basketball_pink,short_brown,sad_brown,largeopen_brown,glasses_null,up_pink,light_plain,jacket_grey,short_orange,sneakers_orange,babells,
-2,GB2,purple,basketball_pink,short_brown,sad_brown,largeopen_brown,glasses_circlepink,angled_pink,light_plain,jacket_blue,short_green,sneakers_blue,babells,
-3,GB3,purple,basketball_pink,short_brown,sad_brown,largeopen_brown,glasses_circlerainbow,circle_pink,light_blush,jacket_pink,short_pink,sneakers_pink,dumb-bells,
-4,GB4,purple,basketball_pink,short_brown,sad_brown,open_brown,glasses_circleblue,angled_pink,tan_plain,jacket_pink,short_green,sneakers_white,babells,
-5,GB5,purple,basketball_pink,short_brown,sad_brown,largeopen_blue,glasses_null,circle_pink,light_blush,jacket_grey,short_blue,sneakers_orange,jumping_rope,
-6,GB6,purple,basketball_pink,short_brown,sad_brown,open_blue,glasses_null,angled_pink,light_plain,jacket_blue,short_orange,sneakers_blue,babells,
-7,GB7,purple,basketball_pink,short_brown,straight_brown,largeopen_blue,glasses_circleblue,down_pink,tan_plain,jacket_pink,short_blue,sneakers_white,babells,
-8,GB8,purple,basketball_pink,short_brown,straight_brown,open_brown,glasses_circlerainbow,up_pink,light_plain,jacket_grey,short_blue,sneakers_pink,jumping_rope,
-9,GB9,purple,basketball_pink,short_brown,straight_brown,open_brown,glasses_circleblue,circle_pink,light_plain,jacket_pink,short_orange,sneakers_white,babells,
-10,GB10,purple,basketball_pink,short_brown,straight_brown,largeopen_brown,glasses_circlepink,down_pink,light_tattoo,tshirt_white,short_green,sneakers_orange,babells,
-11,GB11,purple,basketball_pink,short_brown,straight_brown,largeopen_brown,glasses_null,circle_pink,light_blush,jacket_grey,short_blue,sneakers_blue,dumb-bells,
-12,GB12,purple,basketball_pink,short_brown,straight_brown,open_blue,glasses_null,angled_pink,light_blush,jacket_grey,short_pink,sneakers_white,babells,
-13,GB13,purple,basketball_pink,short_blonde,sad_blonde,largeopen_blue,glasses_circleblue,circle_pink,light_plain,jacket_pink,short_green,sneakers_orange,babells,
-14,GB14,purple,basketball_pink,short_blonde,sad_blonde,open_brown,glasses_null,down_pink,tan_plain,jacket_grey,short_orange,sneakers_blue,jumping_rope,
-15,GB15,purple,basketball_pink,short_blonde,straight_blonde,largeopen_brown,glasses_null,angled_pink,light_blush,jacket_grey,short_green,sneakers_white,dumb-bells,
-16,GB16,purple,basketball_pink,short_blonde,straight_blonde,open_blue,glasses_circleblue,down_pink,light_tattoo,tshirt_white,short_blue,sneakers_orange,babells,
-17,GB17,purple,basketball_pink,short_blonde,sad_blonde,largeopen_blue,glasses_null,circle_pink,light_blush,jacket_pink,short_blue,sneakers_white,babells,
-18,GB18,purple,basketball_pink,long_blonde,sad_blonde,open_brown,glasses_null,up_pink,light_plain,jacket_grey,short_orange,sneakers_blue,babells,
-19,GB19,purple,basketball_pink,long_blonde,straight_blonde,largeopen_brown,glasses_circlepink,circle_pink,light_plain,jacket_blue,short_green,sneakers_orange,dumb-bells,
-20,GB20,purple,basketball_pink,long_brown,straight_brown,largeopen_blue,glasses_null,down_pink,light_tattoo,tshirt_white,short_orange,sneakers_white,dumb-bells,
-21,GB21,purple,basketball_pink,long_brown,straight_brown,open_brown,glasses_null,angled_pink,tan_plain,jacket_grey,short_blue,sneakers_white,babells,
-22,GB22,purple,basketball_pink,long_brown,straight_brown,largeopen_brown,glasses_circlerainbow,circle_pink,light_blush,jacket_pink,short_pink,sneakers_blue,babells,
-23,GB23,purple,basketball_pink,long_brown,straight_brown,largeopen_brown,glasses_circlepink,down_pink,light_blush,jacket_grey,short_blue,sneakers_orange,babells,
-24,GB24,purple,basketball_pink,long_brown,straight_brown,largeopen_brown,glasses_circleblue,down_pink,light_plain,jacket_pink,short_green,sneakers_white,dumb-bells,
-25,GB25,purple,basketball_pink,long_brown,sad_brown,open_blue,glasses_null,down_pink,light_plain,jacket_blue,short_orange,sneakers_blue,babells,
-26,GB26,purple,basketball_pink,long_brown,sad_brown,largeopen_blue,glasses_null,angled_pink,light_blush,jacket_grey,short_blue,sneakers_white,jumping_rope,
-27,GB27,purple,basketball_pink,long_brown,sad_brown,open_brown,glasses_circlepink,up_pink,light_plain,tshirt_white,short_green,sneakers_white,dumb-bells,
-28,GB28,purple,basketball_pink,long_brown,sad_brown,open_brown,glasses_null,circle_pink,light_plain,jacket_grey,short_orange,sneakers_white,babells,
-29,GB29,purple,basketball_pink,long_brown,sad_brown,largeopen_brown,glasses_circlerainbow,down_pink,tan_plain,jacket_pink,short_blue,sneakers_blue,babells,
-30,GB30,purple,basketball_pink,long_brown,sad_brown,largeopen_brown,glasses_circleblue,down_pink,light_tattoo,tshirt_white,short_orange,sneakers_pink,jumping_rope,
-31,GB31,purple,headband_blue,short_brown,straight_brown,open_blue,glasses_null,angled_pink,light_blush,jacket_grey,short_blue,sneakers_white,babells,
-32,GB32,purple,headband_blue,short_brown,straight_brown,largeopen_blue,glasses_null,down_pink,light_plain,tshirt_white,short_orange,sneakers_orange,dumb-bells,
-33,GB33,purple,headband_blue,short_brown,sad_brown,open_brown,glasses_null,down_pink,tan_plain,jacket_pink,short_green,sneakers_blue,babells,
-34,GB34,purple,headband_blue,short_brown,sad_brown,largeopen_brown,glasses_circlerainbow,circle_pink,light_blush,jacket_grey,short_blue,sneakers_white,babells,
-35,GB35,purple,headband_blue,short_brown,sad_brown,largeopen_brown,glasses_circlepink,up_pink,light_plain,jacket_pink,short_blue,sneakers_white,dumb-bells,
-36,GB36,purple,headband_blue,short_brown,sad_brown,largeopen_brown,glasses_circlepink,angled_pink,light_blush,jacket_grey,short_pink,sneakers_pink,jumping_rope,
-37,GB37,purple,headband_blue,short_brown,sad_brown,largeopen_brown,glasses_circleblue,down_pink,light_blush,jacket_grey,short_green,sneakers_white,babells,
-38,GB38,purple,headband_blue,short_brown,sad_brown,largeopen_brown,glasses_null,circle_pink,light_plain,jacket_blue,short_orange,sneakers_blue,babells,
-39,GB39,purple,headband_blue,short_blonde,sad_blonde,open_brown,glasses_null,circle_pink,light_plain,jacket_grey,short_blue,sneakers_orange,dumb-bells,
-40,GB40,purple,headband_blue,short_blonde,straight_blonde,largeopen_blue,glasses_null,down_pink,light_tattoo,tshirt_white,short_blue,sneakers_pink,babells,
-41,GB41,purple,headband_blue,short_blonde,sad_blonde,open_blue,glasses_circleblue,down_pink,light_blush,jacket_grey,short_green,sneakers_blue,babells,
-42,GB42,purple,headband_blue,long_blonde,sad_blonde,open_brown,glasses_null,angled_pink,light_plain,jacket_pink,short_blue,sneakers_white,dumb-bells,
-43,GB43,purple,headband_blue,long_blonde,straight_blonde,largeopen_brown,glasses_null,down_pink,tan_plain,jacket_pink,short_orange,sneakers_blue,jumping_rope,
-44,GB44,purple,headband_blue,long_brown,straight_brown,largeopen_blue,glasses_null,circle_pink,light_blush,jacket_grey,short_orange,sneakers_orange,babells,
-45,GB45,purple,headband_blue,long_brown,straight_brown,open_brown,glasses_circlepink,down_pink,light_plain,jacket_pink,short_blue,sneakers_white,babells,
-46,GB46,purple,headband_blue,long_brown,sad_brown,open_brown,glasses_circleblue,down_pink,tan_plain,jacket_grey,short_blue,sneakers_blue,babells,
-47,GB47,purple,headband_blue,long_brown,sad_brown,largeopen_brown,glasses_circlerainbow,down_pink,light_tattoo,tshirt_white,short_green,sneakers_white,jumping_rope,
-48,GB48,purple,headband_blue,long_brown,sad_brown,largeopen_brown,glasses_circlepink,angled_pink,light_plain,jacket_pink,short_orange,sneakers_orange,babells,
-49,GB49,purple,headband_blue,long_brown,sad_brown,largeopen_brown,glasses_null,circle_pink,light_plain,jacket_grey,short_pink,sneakers_blue,dumb-bells,
-50,GB50,purple,headband_blue,long_brown,sad_brown,largeopen_brown,glasses_circleblue,up_pink,light_blush,jacket_blue,short_green,sneakers_white,babells,
-51,GB51,purple,basketball_blue,short_brown,straight_brown,open_blue,glasses_null,circle_pink,tan_plain,tshirt_white,short_orange,sneakers_blue,babells,
-52,GB52,purple,basketball_blue,short_brown,sad_brown,largeopen_blue,glasses_circlepink,down_pink,light_plain,jacket_grey,short_blue,sneakers_white,jumping_rope,
-53,GB53,purple,basketball_blue,short_blonde,sad_blonde,largeopen_blue,glasses_circleblue,down_pink,light_tattoo,tshirt_white,short_blue,sneakers_orange,babells,
-54,GB54,purple,basketball_blue,short_blonde,straight_blonde,open_brown,glasses_null,circle_pink,light_plain,jacket_pink,short_green,sneakers_blue,dumb-bells,
-55,GB55,purple,basketball_blue,long_blonde,sad_blonde,largeopen_brown,glasses_null,angled_pink,light_blush,jacket_grey,short_blue,sneakers_blue,babells,
-56,GB56,purple,basketball_blue,long_blonde,straight_blonde,open_blue,glasses_null,down_pink,tan_plain,jacket_pink,short_orange,sneakers_white,babells,
-57,GB57,purple,basketball_blue,long_brown,straight_brown,largeopen_blue,glasses_null,up_pink,light_blush,jacket_pink,short_pink,sneakers_pink,dumb-bells,
-58,GB58,purple,basketball_blue,long_brown,sad_brown,open_brown,glasses_null,circle_pink,light_blush,tshirt_white,short_blue,sneakers_white,babells,
-59,GB59,purple,basketball_blue,long_brown,sad_brown,largeopen_brown,glasses_circlerainbow,down_pink,light_plain,jacket_grey,short_green,sneakers_blue,babells,
-60,GB60,purple,basketball_blue,long_brown,sad_brown,largeopen_brown,glasses_circlepink,circle_pink,light_plain,jacket_pink,short_orange,sneakers_orange,jumping_rope,
-61,GB61,purple,hat_null,short_brown,straight_brown,open_blue,glasses_circleblue,down_pink,tan_plain,jacket_grey,short_blue,sneakers_white,babells,
-62,GB62,purple,hat_null,short_brown,straight_brown,largeopen_blue,glasses_null,circle_pink,tan_plain,tshirt_white,short_blue,sneakers_pink,babells,
-63,GB63,purple,hat_null,short_brown,straight_brown,open_brown,glasses_circlerainbow,down_pink,light_blush,jacket_pink,short_pink,sneakers_white,babells,
-64,GB64,purple,hat_null,short_brown,straight_brown,open_brown,glasses_circlepink,angled_pink,light_plain,jacket_pink,short_orange,sneakers_blue,jumping_rope,
-65,GB65,purple,hat_null,short_brown,straight_brown,open_brown,glasses_circleblue,circle_pink,light_plain,jacket_grey,short_green,sneakers_blue,dumb-bells,
-66,GB66,purple,hat_null,short_brown,straight_brown,largeopen_brown,glasses_circlepink,down_pink,light_tattoo,tshirt_white,short_blue,sneakers_white,jumping_rope,
-67,GB67,purple,hat_null,short_brown,straight_brown,largeopen_brown,glasses_null,angled_pink,light_blush,jacket_pink,short_blue,sneakers_pink,babells,
-68,GB68,purple,hat_null,short_brown,sad_brown,largeopen_blue,glasses_null,down_pink,light_plain,jacket_pink,short_pink,sneakers_orange,babells,
-69,GB69,purple,hat_null,short_brown,sad_brown,open_brown,glasses_circlerainbow,circle_pink,light_plain,tshirt_white,short_green,sneakers_white,dumb-bells,
-70,GB70,purple,hat_null,short_brown,sad_brown,open_brown,glasses_null,circle_pink,tan_plain,jacket_grey,short_orange,sneakers_blue,jumping_rope,
-71,GB71,purple,hat_null,short_brown,straight_brown,open_brown,glasses_circleblue,down_pink,light_blush,jacket_grey,short_blue,sneakers_white,babells,
-72,GB72,purple,hat_null,short_brown,sad_brown,open_brown,glasses_circlepink,down_pink,tan_plain,jacket_blue,short_green,sneakers_orange,babells,
-73,GB73,purple,hat_null,short_brown,straight_brown,largeopen_brown,glasses_circlepink,angled_pink,light_plain,jacket_pink,short_blue,sneakers_blue,dumb-bells,
-74,GB74,purple,hat_null,short_brown,sad_brown,largeopen_brown,glasses_circleblue,down_pink,light_blush,jacket_grey,short_pink,sneakers_white,babells,
-75,GB75,purple,hat_null,short_brown,sad_brown,largeopen_brown,glasses_null,circle_pink,light_blush,tshirt_white,short_orange,sneakers_pink,babells,
-76,GB76,purple,hat_null,short_brown,straight_brown,largeopen_brown,glasses_circlepink,down_pink,light_plain,jacket_grey,short_orange,sneakers_blue,jumping_rope,
-77,GB77,purple,hat_null,short_brown,sad_brown,largeopen_brown,glasses_null,up_pink,tan_plain,jacket_grey,short_blue,sneakers_white,babells,
-78,GB78,purple,hat_null,short_brown,sad_brown,open_blue,glasses_null,angled_pink,light_blush,jacket_blue,short_orange,sneakers_white,jumping_rope,
-79,GB79,purple,hat_null,short_blonde,sad_blonde,largeopen_blue,glasses_circleblue,down_pink,tan_plain,jacket_pink,short_orange,sneakers_orange,babells,
-80,GB80,purple,hat_null,short_blonde,sad_blonde,open_brown,glasses_null,circle_pink,light_plain,jacket_pink,short_blue,sneakers_blue,babells,
-81,GB81,purple,hat_null,short_blonde,straight_blonde,largeopen_blue,glasses_null,down_pink,light_tattoo,tshirt_white,short_blue,sneakers_white,jumping_rope,
-82,GB82,purple,hat_null,short_blonde,straight_blonde,open_brown,glasses_circlepink,circle_pink,light_blush,jacket_grey,short_orange,sneakers_blue,babells,
-83,GB83,purple,hat_null,short_blonde,sad_blonde,open_brown,glasses_circleblue,down_pink,light_plain,jacket_grey,short_blue,sneakers_white,dumb-bells,
-84,GB84,purple,hat_null,short_blonde,sad_blonde,largeopen_blue,glasses_null,up_pink,tan_plain,jacket_pink,short_orange,sneakers_orange,babells,
-85,GB85,purple,hat_null,short_blonde,sad_blonde,open_brown,glasses_null,down_pink,light_blush,tshirt_white,short_blue,sneakers_white,dumb-bells,
-86,GB86,purple,hat_null,short_blonde,sad_blonde,largeopen_brown,glasses_circlepink,down_pink,tan_plain,jacket_grey,short_green,sneakers_pink,babells,
-87,GB87,purple,hat_null,short_blonde,sad_blonde,largeopen_brown,glasses_circleblue,angled_pink,light_blush,jacket_pink,short_orange,sneakers_white,babells,
-88,GB88,purple,hat_null,short_blonde,sad_blonde,largeopen_brown,glasses_null,angled_pink,light_plain,jacket_grey,short_blue,sneakers_blue,babells,
-89,GB89,purple,hat_null,long_blonde,sad_blonde,largeopen_blue,glasses_null,circle_pink,light_blush,tshirt_white,short_blue,sneakers_white,jumping_rope,
-90,GB90,purple,hat_null,long_blonde,straight_blonde,open_brown,glasses_null,down_pink,light_plain,jacket_grey,short_pink,sneakers_blue,jumping_rope,
-91,GB91,purple,hat_null,long_blonde,sad_blonde,largeopen_blue,glasses_null,circle_pink,light_plain,jacket_blue,short_orange,sneakers_orange,babells,
-92,GB92,purple,hat_null,long_blonde,sad_blonde,open_brown,glasses_circlepink,circle_pink,light_plain,jacket_grey,short_blue,sneakers_blue,babells,
-93,GB93,purple,hat_null,long_brown,straight_brown,open_brown,glasses_null,down_pink,light_tattoo,tshirt_white,short_orange,sneakers_white,babells,
-94,GB94,purple,hat_null,long_brown,straight_brown,largeopen_brown,glasses_null,angled_pink,tan_plain,jacket_grey,short_blue,sneakers_white,jumping_rope,
-95,GB95,purple,hat_null,long_brown,sad_brown,largeopen_blue,glasses_null,angled_pink,light_blush,jacket_grey,short_green,sneakers_blue,babells,
-96,GB96,purple,hat_null,long_brown,sad_brown,open_brown,glasses_null,circle_pink,light_plain,jacket_blue,short_orange,sneakers_white,dumb-bells,
-97,GB97,purple,hat_null,long_brown,sad_brown,largeopen_brown,glasses_circlerainbow,down_pink,light_plain,tshirt_white,short_blue,sneakers_orange,jumping_rope,
-98,GB98,purple,hat_null,long_brown,sad_brown,largeopen_brown,glasses_circlepink,up_pink,light_plain,jacket_pink,short_blue,sneakers_white,babells,
-99,GB99,purple,hat_null,long_brown,straight_brown,largeopen_brown,glasses_circleblue,down_pink,tan_plain,jacket_grey,short_orange,sneakers_orange,babells,
-100,GB100,purple,hat_null,long_brown,sad_brown,largeopen_brown,glasses_null,circle_pink,light_plain,jacket_pink,short_blue,sneakers_blue,babells,
+number,name,background,hat,hair,eyebrow,eyes,glasses,lips,skin,shirt,shorts,shoes,accesories
+0,fusegoal,purple,basketball_pink,short_brown,sad_brown,largeopen_brown,glasses_null,up_pink,light_plain,jacket_grey,short_orange,sneakers_orange,babells
+1,drafttour,purple,basketball_pink,short_brown,sad_brown,largeopen_brown,glasses_circlepink,angled_pink,light_plain,jacket_blue,short_green,sneakers_blue,babells
+2,fienhoop,purple,basketball_pink,short_brown,sad_brown,largeopen_brown,glasses_circlerainbow,circle_pink,light_blush,jacket_pink,short_pink,sneakers_pink,dumb-bells
+3,glueraid,purple,basketball_pink,short_brown,sad_brown,open_brown,glasses_circleblue,angled_pink,tan_plain,jacket_pink,short_green,sneakers_white,babells
+4,paranet,purple,basketball_pink,short_brown,sad_brown,largeopen_blue,glasses_null,circle_pink,light_blush,jacket_grey,short_blue,sneakers_orange,jumping_rope
+5,cryo cross,purple,basketball_pink,short_brown,sad_brown,open_blue,glasses_null,angled_pink,light_plain,jacket_blue,short_orange,sneakers_blue,babells
+6,big base,purple,basketball_pink,short_brown,straight_brown,largeopen_blue,glasses_circleblue,down_pink,tan_plain,jacket_pink,short_blue,sneakers_white,babells
+7,crazy volley,purple,basketball_pink,short_brown,straight_brown,open_brown,glasses_circlerainbow,up_pink,light_plain,jacket_grey,short_blue,sneakers_pink,jumping_rope
+8,target gliding,purple,basketball_pink,short_brown,straight_brown,open_brown,glasses_circleblue,circle_pink,light_plain,jacket_pink,short_orange,sneakers_white,babells
+9,touch chase,purple,basketball_pink,short_brown,straight_brown,largeopen_brown,glasses_circlepink,down_pink,light_tattoo,tshirt_white,short_green,sneakers_orange,babells
+10,resobat,purple,basketball_pink,short_brown,straight_brown,largeopen_brown,glasses_null,circle_pink,light_blush,jacket_grey,short_blue,sneakers_blue,dumb-bells
+11,siegeline,purple,basketball_pink,short_brown,straight_brown,open_blue,glasses_null,angled_pink,light_blush,jacket_grey,short_pink,sneakers_white,babells
+12,furytour,purple,basketball_pink,short_blonde,sad_blonde,largeopen_blue,glasses_circleblue,circle_pink,light_plain,jacket_pink,short_green,sneakers_orange,babells
+13,gigadraft,purple,basketball_pink,short_blonde,sad_blonde,open_brown,glasses_null,down_pink,tan_plain,jacket_grey,short_orange,sneakers_blue,jumping_rope
+14,fusedive,purple,basketball_pink,short_blonde,straight_blonde,largeopen_brown,glasses_null,angled_pink,light_blush,jacket_grey,short_green,sneakers_white,dumb-bells
+15,high gliding,purple,basketball_pink,short_blonde,straight_blonde,open_blue,glasses_circleblue,down_pink,light_tattoo,tshirt_white,short_blue,sneakers_orange,babells
+16,auto pitch,purple,basketball_pink,short_blonde,sad_blonde,largeopen_blue,glasses_null,circle_pink,light_blush,jacket_pink,short_blue,sneakers_white,babells
+17,galaxy rings,purple,basketball_pink,long_blonde,sad_blonde,open_brown,glasses_null,up_pink,light_plain,jacket_grey,short_orange,sneakers_blue,babells
+18,touch trial,purple,basketball_pink,long_blonde,straight_blonde,largeopen_brown,glasses_circlepink,circle_pink,light_plain,jacket_blue,short_green,sneakers_orange,dumb-bells
+19,extreme course,purple,basketball_pink,long_brown,straight_brown,largeopen_blue,glasses_null,down_pink,light_tattoo,tshirt_white,short_orange,sneakers_white,dumb-bells
+20,driftrelay,purple,basketball_pink,long_brown,straight_brown,open_brown,glasses_null,angled_pink,tan_plain,jacket_grey,short_blue,sneakers_white,babells
+21,sysboarding,purple,basketball_pink,long_brown,straight_brown,largeopen_brown,glasses_circlerainbow,circle_pink,light_blush,jacket_pink,short_pink,sneakers_blue,babells
+22,mindhoop,purple,basketball_pink,long_brown,straight_brown,largeopen_brown,glasses_circlepink,down_pink,light_blush,jacket_grey,short_blue,sneakers_orange,babells
+23,intercrosse,purple,basketball_pink,long_brown,straight_brown,largeopen_brown,glasses_circleblue,down_pink,light_plain,jacket_pink,short_green,sneakers_white,dumb-bells
+24,subline,purple,basketball_pink,long_brown,sad_brown,open_blue,glasses_null,down_pink,light_plain,jacket_blue,short_orange,sneakers_blue,babells
+25,dynamic derby,purple,basketball_pink,long_brown,sad_brown,largeopen_blue,glasses_null,angled_pink,light_blush,jacket_grey,short_blue,sneakers_white,jumping_rope
+26,cryo surfing,purple,basketball_pink,long_brown,sad_brown,open_brown,glasses_circlepink,up_pink,light_plain,tshirt_white,short_green,sneakers_white,dumb-bells
+27,drum chase,purple,basketball_pink,long_brown,sad_brown,open_brown,glasses_null,circle_pink,light_plain,jacket_grey,short_orange,sneakers_white,babells
+28,zero-g cycling,purple,basketball_pink,long_brown,sad_brown,largeopen_brown,glasses_circlerainbow,down_pink,tan_plain,jacket_pink,short_blue,sneakers_blue,babells
+29,blitz course,purple,basketball_pink,long_brown,sad_brown,largeopen_brown,glasses_circleblue,down_pink,light_tattoo,tshirt_white,short_orange,sneakers_pink,jumping_rope
+30,brawlderby,purple,headband_blue,short_brown,straight_brown,open_blue,glasses_null,angled_pink,light_blush,jacket_grey,short_blue,sneakers_white,babells
+31,probatics,purple,headband_blue,short_brown,straight_brown,largeopen_blue,glasses_null,down_pink,light_plain,tshirt_white,short_orange,sneakers_orange,dumb-bells
+32,equiline,purple,headband_blue,short_brown,sad_brown,open_brown,glasses_null,down_pink,tan_plain,jacket_pink,short_green,sneakers_blue,babells
+33,mazetag,purple,headband_blue,short_brown,sad_brown,largeopen_brown,glasses_circlerainbow,circle_pink,light_blush,jacket_grey,short_blue,sneakers_white,babells
+34,thunderrelay,purple,headband_blue,short_brown,sad_brown,largeopen_brown,glasses_circlepink,up_pink,light_plain,jacket_pink,short_blue,sneakers_white,dumb-bells
+35,strike surfing,purple,headband_blue,short_brown,sad_brown,largeopen_brown,glasses_circlepink,angled_pink,light_blush,jacket_grey,short_pink,sneakers_pink,jumping_rope
+36,hurricane sailing,purple,headband_blue,short_brown,sad_brown,largeopen_brown,glasses_circleblue,down_pink,light_blush,jacket_grey,short_green,sneakers_white,babells
+37,comet play,purple,headband_blue,short_brown,sad_brown,largeopen_brown,glasses_null,circle_pink,light_plain,jacket_blue,short_orange,sneakers_blue,babells
+38,parallel combined,purple,headband_blue,short_blonde,sad_blonde,open_brown,glasses_null,circle_pink,light_plain,jacket_grey,short_blue,sneakers_orange,dumb-bells
+39,target tour,purple,headband_blue,short_blonde,straight_blonde,largeopen_blue,glasses_null,down_pink,light_tattoo,tshirt_white,short_blue,sneakers_pink,babells
+40,combvault,purple,headband_blue,short_blonde,sad_blonde,open_blue,glasses_circleblue,down_pink,light_blush,jacket_grey,short_green,sneakers_blue,babells
+41,aeroton,purple,headband_blue,long_blonde,sad_blonde,open_brown,glasses_null,angled_pink,light_plain,jacket_pink,short_blue,sneakers_white,dumb-bells
+42,symnet,purple,headband_blue,long_blonde,straight_blonde,largeopen_brown,glasses_null,down_pink,tan_plain,jacket_pink,short_orange,sneakers_blue,jumping_rope
+43,autovolley,purple,headband_blue,long_brown,straight_brown,largeopen_blue,glasses_null,circle_pink,light_blush,jacket_grey,short_orange,sneakers_orange,babells
+44,pyropool,purple,headband_blue,long_brown,straight_brown,open_brown,glasses_circlepink,down_pink,light_plain,jacket_pink,short_blue,sneakers_white,babells
+45,smash chase,purple,headband_blue,long_brown,sad_brown,open_brown,glasses_circleblue,down_pink,tan_plain,jacket_grey,short_blue,sneakers_blue,babells
+46,illusion trial,purple,headband_blue,long_brown,sad_brown,largeopen_brown,glasses_circlerainbow,down_pink,light_tattoo,tshirt_white,short_green,sneakers_white,jumping_rope
+47,hound pitch,purple,headband_blue,long_brown,sad_brown,largeopen_brown,glasses_circlepink,angled_pink,light_plain,jacket_pink,short_orange,sneakers_orange,babells
+48,dragon rally,purple,headband_blue,long_brown,sad_brown,largeopen_brown,glasses_null,circle_pink,light_plain,jacket_grey,short_pink,sneakers_blue,dumb-bells
+49,command combined,purple,headband_blue,long_brown,sad_brown,largeopen_brown,glasses_circleblue,up_pink,light_blush,jacket_blue,short_green,sneakers_white,babells
+50,hoverline,purple,basketball_blue,short_brown,straight_brown,open_blue,glasses_null,circle_pink,tan_plain,tshirt_white,short_orange,sneakers_blue,babells
+51,duodraft,purple,basketball_blue,short_brown,sad_brown,largeopen_blue,glasses_circlepink,down_pink,light_plain,jacket_grey,short_blue,sneakers_white,jumping_rope
+52,limvault,purple,basketball_blue,short_blonde,sad_blonde,largeopen_blue,glasses_circleblue,down_pink,light_tattoo,tshirt_white,short_blue,sneakers_orange,babells
+53,symmix,purple,basketball_blue,short_blonde,straight_blonde,open_brown,glasses_null,circle_pink,light_plain,jacket_pink,short_green,sneakers_blue,dumb-bells
+54,scufglide,purple,basketball_blue,long_blonde,sad_blonde,largeopen_brown,glasses_null,angled_pink,light_blush,jacket_grey,short_blue,sneakers_blue,babells
+55,floor dive,purple,basketball_blue,long_blonde,straight_blonde,open_blue,glasses_null,down_pink,tan_plain,jacket_pink,short_orange,sneakers_white,babells
+56,snare attack,purple,basketball_blue,long_brown,straight_brown,largeopen_blue,glasses_null,up_pink,light_blush,jacket_pink,short_pink,sneakers_pink,dumb-bells
+57,jump slam,purple,basketball_blue,long_brown,sad_brown,open_brown,glasses_null,circle_pink,light_blush,tshirt_white,short_blue,sneakers_white,babells
+58,drum play,purple,basketball_blue,long_brown,sad_brown,largeopen_brown,glasses_circlerainbow,down_pink,light_plain,jacket_grey,short_green,sneakers_blue,babells
+59,twister ball,purple,basketball_blue,long_brown,sad_brown,largeopen_brown,glasses_circlepink,circle_pink,light_plain,jacket_pink,short_orange,sneakers_orange,jumping_rope
+60,hollowtour,purple,hat_null,short_brown,straight_brown,open_blue,glasses_circleblue,down_pink,tan_plain,jacket_grey,short_blue,sneakers_white,babells
+61,marastyle,purple,hat_null,short_brown,straight_brown,largeopen_blue,glasses_null,circle_pink,tan_plain,tshirt_white,short_blue,sneakers_pink,babells
+62,fienbatics,purple,hat_null,short_brown,straight_brown,open_brown,glasses_circlerainbow,down_pink,light_blush,jacket_pink,short_pink,sneakers_white,babells
+63,azumix,purple,hat_null,short_brown,straight_brown,open_brown,glasses_circlepink,angled_pink,light_plain,jacket_pink,short_orange,sneakers_blue,jumping_rope
+64,dragosurfing,purple,hat_null,short_brown,straight_brown,open_brown,glasses_circleblue,circle_pink,light_plain,jacket_grey,short_green,sneakers_blue,dumb-bells
+65,resolution chase,purple,hat_null,short_brown,straight_brown,largeopen_brown,glasses_circlepink,down_pink,light_tattoo,tshirt_white,short_blue,sneakers_white,jumping_rope
+66,platform course,purple,hat_null,short_brown,straight_brown,largeopen_brown,glasses_null,angled_pink,light_blush,jacket_pink,short_blue,sneakers_pink,babells
+67,thunder draft,purple,hat_null,short_brown,sad_brown,largeopen_blue,glasses_null,down_pink,light_plain,jacket_pink,short_pink,sneakers_orange,babells
+68,geo surfing,purple,hat_null,short_brown,sad_brown,open_brown,glasses_circlerainbow,circle_pink,light_plain,tshirt_white,short_green,sneakers_white,dumb-bells
+69,snail gliding,purple,hat_null,short_brown,sad_brown,open_brown,glasses_null,circle_pink,tan_plain,jacket_grey,short_orange,sneakers_blue,jumping_rope
+70,zephybase,purple,hat_null,short_brown,straight_brown,open_brown,glasses_circleblue,down_pink,light_blush,jacket_grey,short_blue,sneakers_white,babells
+71,orientbat,purple,hat_null,short_brown,sad_brown,open_brown,glasses_circlepink,down_pink,tan_plain,jacket_blue,short_green,sneakers_orange,babells
+72,reverboarding,purple,hat_null,short_brown,straight_brown,largeopen_brown,glasses_circlepink,angled_pink,light_plain,jacket_pink,short_blue,sneakers_blue,dumb-bells
+73,soargoal,purple,hat_null,short_brown,sad_brown,largeopen_brown,glasses_circleblue,down_pink,light_blush,jacket_grey,short_pink,sneakers_white,babells
+74,podtour,purple,hat_null,short_brown,sad_brown,largeopen_brown,glasses_null,circle_pink,light_blush,tshirt_white,short_orange,sneakers_pink,babells
+75,ember slam,purple,hat_null,short_brown,straight_brown,largeopen_brown,glasses_circlepink,down_pink,light_plain,jacket_grey,short_orange,sneakers_blue,jumping_rope
+76,super cross,purple,hat_null,short_brown,sad_brown,largeopen_brown,glasses_null,up_pink,tan_plain,jacket_grey,short_blue,sneakers_white,babells
+77,double course,purple,hat_null,short_brown,sad_brown,open_blue,glasses_null,angled_pink,light_blush,jacket_blue,short_orange,sneakers_white,jumping_rope
+78,neuro mix,purple,hat_null,short_blonde,sad_blonde,largeopen_blue,glasses_circleblue,down_pink,tan_plain,jacket_pink,short_orange,sneakers_orange,babells
+79,mini trial,purple,hat_null,short_blonde,sad_blonde,open_brown,glasses_null,circle_pink,light_plain,jacket_pink,short_blue,sneakers_blue,babells
+80,quantumvolley,purple,hat_null,short_blonde,straight_blonde,largeopen_blue,glasses_null,down_pink,light_tattoo,tshirt_white,short_blue,sneakers_white,jumping_rope
+81,quadriglide,purple,hat_null,short_blonde,straight_blonde,open_brown,glasses_circlepink,circle_pink,light_blush,jacket_grey,short_orange,sneakers_blue,babells
+82,infinichase,purple,hat_null,short_blonde,sad_blonde,open_brown,glasses_circleblue,down_pink,light_plain,jacket_grey,short_blue,sneakers_white,dumb-bells
+83,balacrosse,purple,hat_null,short_blonde,sad_blonde,largeopen_blue,glasses_null,up_pink,tan_plain,jacket_pink,short_orange,sneakers_orange,babells
+84,amaton,purple,hat_null,short_blonde,sad_blonde,open_brown,glasses_null,down_pink,light_blush,tshirt_white,short_blue,sneakers_white,dumb-bells
+85,resolution style,purple,hat_null,short_blonde,sad_blonde,largeopen_brown,glasses_circlepink,down_pink,tan_plain,jacket_grey,short_green,sneakers_pink,babells
+86,mountain slam,purple,hat_null,short_blonde,sad_blonde,largeopen_brown,glasses_circleblue,angled_pink,light_blush,jacket_pink,short_orange,sneakers_white,babells
+87,jump gliding,purple,hat_null,short_blonde,sad_blonde,largeopen_brown,glasses_null,angled_pink,light_plain,jacket_grey,short_blue,sneakers_blue,babells
+88,dragon raid,purple,hat_null,long_blonde,sad_blonde,largeopen_blue,glasses_null,circle_pink,light_blush,tshirt_white,short_blue,sneakers_white,jumping_rope
+89,power draft,purple,hat_null,long_blonde,straight_blonde,open_brown,glasses_null,down_pink,light_plain,jacket_grey,short_pink,sneakers_blue,jumping_rope
+90,segsurf,purple,hat_null,long_blonde,sad_blonde,largeopen_blue,glasses_null,circle_pink,light_plain,jacket_blue,short_orange,sneakers_orange,babells
+91,duogoal,purple,hat_null,long_blonde,sad_blonde,open_brown,glasses_circlepink,circle_pink,light_plain,jacket_grey,short_blue,sneakers_blue,babells
+92,fuseline,purple,hat_null,long_brown,straight_brown,open_brown,glasses_null,down_pink,light_tattoo,tshirt_white,short_orange,sneakers_white,babells
+93,omegaderby,purple,hat_null,long_brown,straight_brown,largeopen_brown,glasses_null,angled_pink,tan_plain,jacket_grey,short_blue,sneakers_white,jumping_rope
+94,trinichase,purple,hat_null,long_brown,sad_brown,largeopen_blue,glasses_null,angled_pink,light_blush,jacket_grey,short_green,sneakers_blue,babells
+95,mini sailing,purple,hat_null,long_brown,sad_brown,open_brown,glasses_null,circle_pink,light_plain,jacket_blue,short_orange,sneakers_white,dumb-bells
+96,ice course,purple,hat_null,long_brown,sad_brown,largeopen_brown,glasses_circlerainbow,down_pink,light_plain,tshirt_white,short_blue,sneakers_orange,jumping_rope
+97,astral gliding,purple,hat_null,long_brown,sad_brown,largeopen_brown,glasses_circlepink,up_pink,light_plain,jacket_pink,short_blue,sneakers_white,babells
+98,sprint combined,purple,hat_null,long_brown,straight_brown,largeopen_brown,glasses_circleblue,down_pink,tan_plain,jacket_grey,short_orange,sneakers_orange,babells
+99,quantum mix,purple,hat_null,long_brown,sad_brown,largeopen_brown,glasses_null,circle_pink,light_plain,jacket_pink,short_blue,sneakers_blue,babells

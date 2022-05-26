@@ -11,6 +11,32 @@ const collection_cid = "QmPUQSULAxGXK321PMJKE5Qcs3xHvRuxDzDUjoB8g9cmzD";
 
 const runTest = false;
 
+/**
+    Rarity or Level are driven by Metadata file ids in ipfs
+    gb{id}.json
+    0 - 4 Mystic => example gb3.json
+    5 - 14 Legendary
+    15 - 29 Rare
+    30 - onwards Common
+*/
+
+const levels = new Map([
+    ['0-4', "mystic"],
+    ['5-14', "legendary"],
+    ['15-29', "rare"],
+])
+
+const levelsArray = [[0, 4], [5, 14], [15, 29]];
+
+const resoveLevel = (idx) => {
+    for (const [min, max] of levelsArray) {
+        if (idx >= min && idx <= max) {
+            return levels.get(`${min}-${max}`);
+        }
+    }
+    return "common"
+};
+
 for (const [lineIndex, lineValues] of values.entries()) {
     if (runTest && lineIndex > 10) break;
     console.log(lineValues);
@@ -24,6 +50,11 @@ for (const [lineIndex, lineValues] of values.entries()) {
             attributes.push(attr);
         }
     }
+    // level
+    attributes.push({
+        "trait_type": "level",
+        "value": resoveLevel(lineIndex),
+    });
     const idx = lineIndex + 1;
     const nameObj = attributes.find(a => a["trait_type"] == "name");
     const obj = {
@@ -37,5 +68,5 @@ for (const [lineIndex, lineValues] of values.entries()) {
     if (runTest) console.log(obj);
     // save as json file
     const json = JSON.stringify(obj);
-    fs.writeFileSync(`mgl_genesis_jsons/gb${idx}.json`, json);
+    fs.writeFileSync(`mgl_genesis_jsons/gb${idx - 1}.json`, json);
 }
