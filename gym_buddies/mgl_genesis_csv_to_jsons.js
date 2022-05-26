@@ -7,7 +7,7 @@ const lines = csv.toString().split("\r");
 const properties = lines[0].split(",")
 const values = lines.slice(1);
 
-const collection_cid = "QmPUQSULAxGXK321PMJKE5Qcs3xHvRuxDzDUjoB8g9cmzD";
+const collection_cid = "bafybeietlso25ekzdwzfsbdu3lknwswfrh77woxaokpduj5jaebbeomhay";
 
 const runTest = false;
 
@@ -91,8 +91,8 @@ for (const [lineIndex, lineValues] of values.entries()) {
     const obj = {
         "name": nameObj ? nameObj["value"] : "noname",
         "description": "MetaGymLand GymBuddy that loves AI and NFTs",
-        "image": `https://gateway.pinata.cloud/ipfs/${collection_cid}/gb${idx}.png`,
-        "sprite": `https://gateway.pinata.cloud/ipfs/${collection_cid}/gbpx${idx}.png`,
+        "image": `ipfs://${collection_cid}/gb${idx}.png`,
+        "sprite": `ipfs://${collection_cid}/gbpx${idx}.png`,
         "collection_name": "MetaGymLand Genesis GymBuddies",
         "attributes": attributes,
     };
