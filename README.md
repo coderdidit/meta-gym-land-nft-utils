@@ -4,20 +4,22 @@ MetaGymLand Wellness Metaverse Powered with AI and NFTs
 
 https://metagymland.com
 
+This repo includes utillity scirpt 
+
+to generate MetaGymLand NFT collections
+
 ### NFT graphics and metadata scripts
 
-- images.js
+- `gym_buddies/mgl_genesis_csv_to_jsons.js`
 
-script to upload NFTs to IPFS
-
-- metadata.js
-
-script to upload NFTs metadata to IPFS
-
-`bulk_uploads` location has history of uploads in json format
+script to generate GymBuddies metadata
 
 ### Disclaimer
 
 Scripts here are for manual usage, they are not automated yet
 
-next generation of NFT graphics and metadata may need code changes in the scripts
+# Uploads to NFT storage
+
+Uploads to https://nft.storage 
+
+where made by using `NFT up` Desktop app
