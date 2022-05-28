@@ -14,6 +14,12 @@ to generate MetaGymLand NFT collections
 
 script to generate GymBuddies metadata
 
+How to run:
+
+```ssh
+node gym_buddies/mgl_genesis_csv_to_jsons.js
+```
+
 ### Disclaimer
 
 Scripts here are for manual usage, they are not automated yet
