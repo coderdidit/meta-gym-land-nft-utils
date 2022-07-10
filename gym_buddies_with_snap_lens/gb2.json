@@ -1,0 +1,91 @@
+{
+    "name": "hound pitch",
+    "description": "MetaGymLand GymBuddy that loves AI and NFTs",
+    "image": "ipfs://bafybeietlso25ekzdwzfsbdu3lknwswfrh77woxaokpduj5jaebbeomhay/gb48.png",
+    "sprite": "ipfs://bafybeietlso25ekzdwzfsbdu3lknwswfrh77woxaokpduj5jaebbeomhay/gbpx48.png",
+    "snap_ar_link": "https://lens.snapchat.com/1366cf4b626b4bc886b315cf7e574016",
+    "snap_ar_miniature_link": "https://lens.snapchat.com/d21e3a69c82c4d728440b2b4baef3bfc",
+    "collection_name": "MetaGymLand GymBuddies with Snap Lens",
+    "attributes": [
+        {
+            "trait_type": "name",
+            "value": "hound pitch"
+        },
+        {
+            "trait_type": "background",
+            "value": "purple"
+        },
+        {
+            "trait_type": "hat",
+            "value": "headband_blue"
+        },
+        {
+            "trait_type": "hair",
+            "value": "long_brown"
+        },
+        {
+            "trait_type": "eyebrow",
+            "value": "sad_brown"
+        },
+        {
+            "trait_type": "eyes",
+            "value": "largeopen_brown"
+        },
+        {
+            "trait_type": "glasses",
+            "value": "glasses_circlepink"
+        },
+        {
+            "trait_type": "lips",
+            "value": "angled_pink"
+        },
+        {
+            "trait_type": "skin",
+            "value": "light_plain"
+        },
+        {
+            "trait_type": "shirt",
+            "value": "jacket_pink"
+        },
+        {
+            "trait_type": "shorts",
+            "value": "short_orange"
+        },
+        {
+            "trait_type": "shoes",
+            "value": "sneakers_orange"
+        },
+        {
+            "trait_type": "accesories",
+            "value": "babells"
+        },
+        {
+            "trait_type": "level",
+            "value": "common"
+        },
+        {
+            "trait_type": "endurance",
+            "value": 7
+        },
+        {
+            "trait_type": "consistency",
+            "value": 17
+        },
+        {
+            "trait_type": "sweatiness",
+            "value": 77
+        },
+        {
+            "trait_type": "motivation",
+            "value": 33
+        },
+        {
+            "trait_type": "strength",
+            "value": 7
+        },
+        {
+            "trait_type": "luck",
+            "value": 61
+        }
+    ]
+}
