@@ -1,9 +1,1 @@
-{
-    "name": "demo buddy",
-    "description": "Demo MetaGymLand GymBuddy that loves AI, NFTs and Snap AR lenses",
-    "image": "ipfs://bafybeiddvrgwzvzugcpm3dzwqpmznzi446vtnwo7am43ybtv7uhphoullq/gbtest.png",
-    "sprite": "ipfs://bafybeiddvrgwzvzugcpm3dzwqpmznzi446vtnwo7am43ybtv7uhphoullq/gbpxtest.png",
-    "collection_name": "MetaGymLand GymBuddies with Snap Lens",
-    "snap_ar_link": "https://lens.snapchat.com/13d148804b8c4b5d85497a741dc5ed18",
-    "snap_ar_miniature_link": "https://lens.snapchat.com/3426b9b344cf49de84db539f77f310be"
-}
+{"name":"demo buddy","description":"Demo MetaGymLand GymBuddy that loves AI, NFTs and Snap AR lenses","image":"ipfs://bafybeiddvrgwzvzugcpm3dzwqpmznzi446vtnwo7am43ybtv7uhphoullq/gbtest.png","sprite":"ipfs://bafybeiddvrgwzvzugcpm3dzwqpmznzi446vtnwo7am43ybtv7uhphoullq/gbpxtest.png","collection_name":"MetaGymLand GymBuddies with Snap Lens","snap_ar_link":"https://lens.snapchat.com/aeace2ec01cc454cb09a07601b130ff8","snap_ar_miniature_link":"https://lens.snapchat.com/e1f568eb411c40508fcfb0bf45b83608"}
